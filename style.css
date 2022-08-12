@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    background-color: lightgrey;
+    height: 3rem;
+}
+
+header h1{
+    color: rgb(72, 118, 121);
+    text-align: center;
+}
+
+.cuerpo{ 
+    display: flex;
+    min-height: 40rem;
+    background-color: lightskyblue;
+}
+
+nav{
+    padding-top: 1rem;
+    width: 20%;
+    background-color: gray;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none; 
+}
+
+.botonNav{
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border-color: rgb(123, 159, 161);
+    background-color: rgb(123, 159, 161);
+    min-width: 12rem;
+    text-align: center;
+}
+
+.botonNav:hover{
+    background-color: rgb(79, 117, 119);
+}
+
+main{
+    width: 80%;
+    padding: 1rem;
+    background-color: rgb(123, 159, 161);
+}
+
+footer{
+    background-color: lightgrey;
+    min-height: 1.5rem;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1 rem;
+    color: rgb(72, 118, 121);
+    /* color: rgb(123, 159, 161); */
+}

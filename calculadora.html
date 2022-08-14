@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba JS</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./funciones.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Pantalla para pruebas JavaScript</h1>
+    </header>
+
+    <div class="cuerpo">
+        <nav>
+            <ul>
+                <li><button class="botonNav" type="button" onclick="TextoCuerpo()" id="btnTexto">Agrega Texto</button></li>
+                <li><button class="botonNav" type="button" onclick="BorrarTextoCuerpo()" id="btnBorrarTexto">Borrar Texto</button></li>
+                <li><button class="botonNav" type="button" onclick="CargarPagina('./index.html')" id="btnCalculadora">Principal</button></li>
+            </ul>
+        </nav>
+        <main class="areaTrabajo">
+            <section class="recuadros">
+                <h3 id="texto"></h3>
+            </section>
+            <section class="recuadros">
+                <div class="linea">
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(1)" id="btn1">1</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(2)" id="btn2">2</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(3)" id="btn3">3</button>
+                    <button class="botonTecla" type="button" onclick="TeclaOperacion('+')" id="btnMas">+</button>
+                </div>
+                <div class="linea">
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(4)" id="btn4">4</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(5)" id="btn5">5</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(6)" id="btn6">6</button>
+                    <button class="botonTecla" type="button" onclick="TeclaOperacion('-')" id="btnMenos">-</button>
+                </div>
+                <div class="linea">
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(7)" id="btn7">7</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(8)" id="btn8">8</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(9)" id="btn9">9</button>
+                    <button class="botonTecla" type="button" onclick="TeclaNumero(3)" id="btn0">0</button>
+                </div>
+                <div class="linea">
+
+                </div>
+
+            </section>
+            
+        </main>
+    </div>
+    
+    <footer>
+        <p>CoderHouse - Berdasco - JavaScript - Ejercicios</p>
+    </footer>
+
+    <script>
+        Setup();
+        Continuacion();
+    </script>
+
+
+</body>
+</html>

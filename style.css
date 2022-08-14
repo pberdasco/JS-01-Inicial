@@ -44,10 +44,32 @@ nav ul{
     background-color: rgb(79, 117, 119);
 }
 
+.linkCalculadora{
+    margin-top: 2rem;
+    color: red;
+}
+
 main{
     width: 80%;
     padding: 1rem;
     background-color: rgb(123, 159, 161);
+}
+
+.recuadros{
+    border: solid 1px black;
+    min-height: 5rem;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.botonTecla{
+    margin: .2rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border-color: lightgray;
+    background-color: lightgray;
+    min-width: 2.5rem;
+    text-align: center;
 }
 
 footer{

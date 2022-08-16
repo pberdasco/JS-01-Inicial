@@ -13,6 +13,10 @@
     
 </head>
 <body>
+    <script>
+        SimonSetup(100);
+    </script>
+
     <header>
         <h1>Pantalla para pruebas JavaScript</h1>
     </header>
@@ -25,17 +29,18 @@
             </ul>
         </nav>
         <main class="areaTrabajo">
-            <section class="recuadros">
+            <section class="recuadros dos-columnas">
                 <h3 id="texto"></h3>
+                <button class="botonStart" type="button" onclick="SimonList()" id="btnStart">Comenzar</button>
             </section>
             <section class="recuadros">
                 <div class="half-circle">
-                    <button class="circular top-left" id="simon1" type="button" onclick="Simon(1)"></button>
-                    <button class="circular top-right" id="simon2" type="button" onclick="Simon(2)"></button>
+                    <button class="circular top-left" id="simon1" type="button" onclick="SimonPress(1)"></button>
+                    <button class="circular top-right" id="simon2" type="button" onclick="SimonPress(2)"></button>
                 </div>
                 <div class="half-circle">
-                    <button class="circular bottom-left" id="simon3" type="button" onclick="Simon(3)"></button>
-                    <button class="circular bottom-right" id="simon4" type="button" onclick="Simon(4)"></button>
+                    <button class="circular bottom-left" id="simon3" type="button" onclick="SimonPress(3)"></button>
+                    <button class="circular bottom-right" id="simon4" type="button" onclick="SimonPress(4)"></button>
                 </div>
             </section>
             

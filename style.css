@@ -44,6 +44,19 @@ nav ul{
     background-color: rgb(79, 117, 119);
 }
 
+.botonStart{
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: lightgray;
+    min-width: 8rem;
+    height: 3rem;
+    text-align: center;
+}
+
+.botonStart:hover{
+    background-color: grey;
+}
 .linkCalculadora{
     margin-top: 2rem;
     color: red;
@@ -60,6 +73,14 @@ main{
     min-height: 5rem;
     margin: 1rem;
     padding: .5rem;
+}
+
+.dos-columnas{
+    display: flex;
+}
+
+.dos-columnas h3{
+    min-width: 80%;
 }
 
 .circular{

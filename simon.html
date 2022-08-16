@@ -7,7 +7,8 @@
     <title>Prueba JS</title>
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./scripts/funciones.js"></script>
+    
+    <script src="./scripts/simon.js"></script>
     <script src="./scripts/menu.js"></script>
     
 </head>
@@ -19,10 +20,8 @@
     <div class="cuerpo">
         <nav>
             <ul>
-                <li><button class="botonNav" type="button" onclick="TextoCuerpo()" id="btnTexto">Agrega Texto</button></li>
-                <li><button class="botonNav" type="button" onclick="BorrarTextoCuerpo()" id="btnBorrarTexto">Borrar Texto</button></li>
                 <li><button class="botonNav" type="button" onclick="CargarPagina('./calculadora.html')" id="btnCalculadora">Calculadora</button></li>
-                <li><button class="botonNav" type="button" onclick="CargarPagina('./simon.html')" id="btnSimon">Simon</button></li>
+                <li><button class="botonNav" type="button" onclick="CargarPagina('./index.html')" id="btnCalculadora">Principal</button></li>
             </ul>
         </nav>
         <main class="areaTrabajo">
@@ -30,7 +29,14 @@
                 <h3 id="texto"></h3>
             </section>
             <section class="recuadros">
-                
+                <div class="half-circle">
+                    <button class="circular top-left" id="simon1" type="button" onclick="Simon(1)"></button>
+                    <button class="circular top-right" id="simon2" type="button" onclick="Simon(2)"></button>
+                </div>
+                <div class="half-circle">
+                    <button class="circular bottom-left" id="simon3" type="button" onclick="Simon(3)"></button>
+                    <button class="circular bottom-right" id="simon4" type="button" onclick="Simon(4)"></button>
+                </div>
             </section>
             
         </main>
@@ -39,12 +45,6 @@
     <footer>
         <p>CoderHouse - Berdasco - JavaScript - Ejercicios</p>
     </footer>
-
-    <script>
-        Setup();
-        Continuacion();
-    </script>
-
 
 </body>
 </html>
